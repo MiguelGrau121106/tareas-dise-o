@@ -1,0 +1,175 @@
+:root {
+    --border-color: #2b4e75;
+    --text-color: #1a2a3a;
+    --badge-bg: #2b4e75;
+    --badge-text: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 10px;
+}
+
+.box-border {
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.input-group label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.input-group .underscore {
+    flex-grow: 1;
+    border-bottom: 1px solid #999;
+    height: 1.2em;
+}
+
+.main-content {
+}
+
+h1 {
+    text-align: center;
+    color: var(--border-color);
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.grid-factors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.factor-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    min-height: 60px;
+}
+
+.icon-placeholder {
+    width: 90px;
+    
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #222;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 0.9rem;
+    font-weight: bold;
+    min-height: 40px;
+    margin-bottom: 10px;
+}
+
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rank-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.rank-item .line {
+    flex-grow: 1;
+    border-bottom: 1px solid #ccc;
+    height: 14px;
+}
+
+.footer-question {
+    font-size: 0.9rem;
+}
+
+.footer-question p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.long-line {
+    border-bottom: 1px solid #ccc;
+    margin-top: 25px;
+    width: 100%;
+}
